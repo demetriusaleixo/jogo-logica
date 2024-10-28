@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", "sans-serif";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../imagens/bg4.webp') center;
+}
+
+.caixa {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #203588cc;
+}
+
+.caixa::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 10px;
+    padding: 3px;
+    border: 2px solid #2f0068;
+    animation: brilho 3s linear infinite;
+}
+
+@keyframes brilho {
+    0% {
+        box-shadow: 0 0 20px 5px #2f0068; /* 0 0 20 5 */
+    }
+    25% {
+        box-shadow: 0 0 40px 10px #2f0068; /* 0 0 40 10 */
+    }
+    50% {
+        box-shadow: 0 0 20px 5px #2f0068; /* 0 0 20 5 */
+    }
+    75% {
+        box-shadow: 0 0 40px 10px #2f0068; /* 0 0 40 10 */
+    }
+    100% {
+        box-shadow: 0 0 20px 5px #2f0068; /* 0 0 20 5 */
+    }
+}
+
+input {
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #1C2046;
+    color: white;
+    border: 2px solid #6a737c;
+    border-radius: 5px;
+}
+
+h1, span, button {
+    color: white;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+span {
+    font-size: 30px;
+}
+
+button {
+    font-size: 24px;
+    background-color: #1C2046;
+    border: 2px solid #6a737c;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        
+    }
+}

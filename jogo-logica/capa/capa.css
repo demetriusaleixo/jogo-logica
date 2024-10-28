@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+
+.start {
+    padding: 10px;
+    width: 170px;
+    height: 65px;
+    font-size: 32px;
+    cursor: pointer;
+}

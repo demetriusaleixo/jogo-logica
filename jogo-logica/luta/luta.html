@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="luta.css">
+</head>
+<body class="background">
+
+    <div class="botao-musica"><button>musica</button></div>
+    
+    <div class="boss">
+        <div class="nome">Boss</div>
+        <div class="hp">
+            <div class="hp-barra-interna"></div>
+        </div>
+        <div class="corte"></div>
+        <img class="boss-sprit" src="boss2.png" alt="">
+    </div>
+
+    <div class="player">
+        <div class="nome">Player</div>
+        <div class="hp">
+            <div class="hp-barra-interna"></div>
+        </div>
+        <p class="pergunta">Pergunta aqui!</p>
+        <input type="text" name="texto" id="itexto">
+        <button class="responder">Responder</button>
+    </div>
+
+    <audio id="musica" src="musica.mp3" loop></audio>
+    <audio id="som-dano" src="dano.wav"></audio>
+    <audio id="som-ataque" src="ataque.wav"></audio>
+
+    <script src="luta.js"></script>
+</body>
+</html>
