@@ -1,3 +1,3 @@
 document.querySelector('.start').addEventListener('click', function() {
-    location.href = '../dialogo/dialogo.html';
+    location.href = 'dialogo/dialogo.html';
 })
